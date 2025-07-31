@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+body{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0) !important;
+}
+
+.hide-scroll::-webkit-scrollbar{
+  display: none;
+}
+
+@layer base{
+  button{
+    @apply border p-[5px] px-7 rounded-[15px] cursor-pointer hover:bg-[white] hover:text-[black];
+  }
+  li{
+    @apply cursor-pointer hover:underline;
+  }
+}
+
+@layer components{
+  .main{
+    @apply m-1 flex justify-around rounded-2xl border border-[#585858] py-11 text-[#ffffff] ;
+  }
+  .active{
+    @apply text-[orange] underline;
+  }
+
+ 
+}
